@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkslategray;
+    overflow: hidden;
+
+}
+.w-33{
+    width: 30.33%;
+    float: left;
+    /* background-color: rgb(207, 195, 195);  */
+    margin-top: 65px;
+   
+ 
+   
+    
+}
+  .card-container{
+    padding: 30px 0 0 0;
+} 
+.card{
+     background-color: aliceblue; 
+    position: relative;
+    border-radius: 5px;
+    box-shadow: 0px 8px 24px 0px rgba(0,0,0,0.5);
+    /* height:400px; */
+    height: 200px;
+    margin: 0 25px;
+    top: 90px;
+    transition: 0.5s;
+    transition: 0.5s ease-in-out;
+}
+.card-img
+{
+width: 55%;
+position: relative;
+left:21%;
+top: -80px;
+box-shadow: 0px 3px 25px 0px rgba(0,0,0,0.5);
+/* height: 258px; */
+
+}
+.card-img img{
+    width: 100%;
+    height: auto;
+}
+.card-desc{
+    text-align: center;
+    padding: 24px;
+    position: relative;
+    top: -70px;
+    visibility: hidden;
+    opacity: 0;
+    transition:0.2s ;
+    transition-delay: 0s;
+    transition: 0.5s ease-in-out;
+    
+}
+.card-desc h2{
+    font-size: 23px;
+    margin-bottom: 21px;
+}
+.card-desc p{
+    font-size: 15px;
+}
+.card-desc a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: crimson;
+    color: aliceblue;
+    padding: 10px 23px;
+    border-radius: 7px;
+    font-size: 15px;
+    margin-top: 32px;
+
+}
+.card:hover{
+    transition-delay: 0s;
+    height: 400px;
+    top: 0px;
+}
+.card:hover .card-desc{
+    transition-delay: 0.5s;
+    visibility: visible;
+    opacity: 1;
+}
